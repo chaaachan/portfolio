@@ -1,0 +1,71 @@
+.first-view {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+  background-color: #dda0dd;
+}
+
+.first-view__image {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  object-fit: contain;
+  object-position: center;
+  animation: strong-bounce 1.3s ease-out both;
+}
+
+/* タブレット */
+@media screen and (max-width: 900px) {
+  .first-view__image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+}
+
+/* スマートフォン */
+@media screen and (max-width: 540px) {
+  .first-view__image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+}.first-view {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+  background-color: #dda0dd;
+}
+
+.first-view__image {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  object-fit: contain;
+  object-position: center;
+  animation: strong-bounce 1.3s ease-out both;
+}
+
+/* タブレット */
+@media screen and (max-width: 900px) {
+  .first-view__image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+}
+
+/* スマートフォン */
+@media screen and (max-width: 540px) {
+  .first-view__image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+}

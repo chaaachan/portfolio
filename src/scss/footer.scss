@@ -1,0 +1,6 @@
+.footer { padding: 48px 20px; border-top: 4px dotted #4b0082; color: #4b0082; background: #dda0dd; text-align: center; }
+.footer p { margin: 0; font-size: clamp(.9rem, 1.5vw, 1.25rem); font-weight: 900; }
+.back-to-top { position: fixed; right: 0; bottom: 0; z-index: 1000; display: block; width: 150px; height: 150px; margin: 0; padding: 0; border: 0; background: transparent; cursor: pointer; transition: transform .3s; }
+.back-to-top img { width: 100%; height: 100%; object-fit: contain; }
+.back-to-top:hover { transform: scale(1.08); }
+@media (max-width: 600px) { .back-to-top { right: 8px; bottom: 8px; width: 95px; height: 95px; } }

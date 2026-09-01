@@ -1,0 +1,47 @@
+.to-everyone-page { padding: 52px clamp(24px, 5vw, 85px) 130px; background: #dda0dd; }
+.questions-section, .favorites-section, .lucky-section { max-width: 1320px; margin: 0 auto 70px; }
+.questions-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 26px; }
+.question-card { position: relative; display: grid; grid-template-columns: 125px 1fr; grid-template-rows: auto 1fr; min-height: 158px; padding: 24px 25px 20px 125px; border-radius: 22px; background: #fff; box-shadow: 0 8px 10px rgb(0 0 0 / 20%); }
+.question-card__number { position: absolute; left: 22px; top: 17px; display: grid; place-items: center; width: 68px; height: 68px; border-radius: 50%; color: #fff; background: #ff1493; font-size: 1.55rem; }
+.question-card h2 { grid-column: 1 / -1; margin: 0 0 16px; color: #ff1493; font-size: clamp(1.2rem, 1.8vw, 1.7rem); }
+.question-card strong { align-self: start; width: max-content; padding: 7px 16px; background: #ffff00; font-size: 1.4rem; }
+.question-card p { align-self: center; margin: 0; font-size: clamp(.9rem, 1.3vw, 1.15rem); font-weight: 700; line-height: 1.25; }
+.photo-row { position: relative; display: grid; grid-template-columns: 1.3fr .82fr 1.3fr .82fr 1.3fr; align-items: center; gap: 35px; padding: 20px 10px 72px; }
+.polaroid { --frame: #ffb6c1; position: relative; aspect-ratio: .72; margin: 0; padding: 18px 18px 62px; background: var(--frame); box-shadow: 0 10px 13px rgb(0 0 0 / 22%); transform: rotate(var(--rotate)); }
+.polaroid img { object-fit: cover; padding: 18px 18px 62px; }
+.polaroid--mint { --frame: #36d9ca; width: 88%; justify-self: center; transform: translateY(105px) rotate(var(--rotate)); } .polaroid--hotpink { --frame: #ff4b9d; } .polaroid--purple { --frame: #ac79ed; width: 88%; justify-self: center; transform: translateY(105px) rotate(var(--rotate)); } .polaroid--orange { --frame: #ff8c00; }
+.photo-tape { position: absolute; z-index: 4; top: -14px; left: 50%; width: 108px; height: 44px; background-color: #ff1493; background-image: radial-gradient(circle at 13px 13px, #fff 0 6px, transparent 7px), radial-gradient(circle at 36px 30px, transparent 0 7px, #fff 8px 10px, transparent 11px), radial-gradient(circle at 61px 12px, #fff 0 7px, transparent 8px), radial-gradient(circle at 88px 29px, transparent 0 5px, #fff 6px 8px, transparent 9px), radial-gradient(circle at 15px 38px, transparent 0 4px, #fff 5px 7px, transparent 8px), radial-gradient(circle at 49px 4px, #fff 0 5px, transparent 6px), radial-gradient(circle at 96px 6px, transparent 0 4px, #fff 5px 7px, transparent 8px); transform: translateX(-50%); }
+.favorite-star { position: absolute; z-index: 6; color: #00fa9a; font-size: 3.45rem; line-height: 1; -webkit-text-stroke: 3px #111; pointer-events: none; }
+.favorite-star--1 { left: 35.5%; top: 43%; transform: rotate(-15deg); }
+.favorite-star--2 { left: -1%; bottom: 0; transform: rotate(12deg); }
+.favorite-star--3 { right: 24%; top: 5%; transform: rotate(-8deg); }
+.favorite-star--4 { right: -1%; bottom: 0; font-size: 3.2rem; transform: rotate(14deg); }
+.lucky-section { margin-top: 95px; }
+.lucky-box { display: grid; grid-template-columns: 1fr 1fr; min-height: 380px; border-radius: 25px; background: #ff1493; box-shadow: 0 12px 14px rgb(0 0 0 / 22%); overflow: hidden; }
+.lucky-box__form { padding: 42px 55px; border-right: 4px dotted #4b0082; }
+.lucky-box__form h3 { margin: 0 0 25px; color: #ffff00; font-size: clamp(1.5rem, 2.3vw, 2.2rem); }
+.lucky-box__form > p { color: #fff; font-size: clamp(1.05rem, 1.7vw, 1.5rem); line-height: 1.45; }
+.draw-controls { display: flex; gap: 38px; margin-top: 30px; }
+.draw-controls input, .draw-controls button { width: 220px; height: 85px; border: 0; border-radius: 18px; font: inherit; font-size: 1.8rem; text-align: center; }
+.draw-controls button { color: #4b0082; background: #ffff00; font-size: 2rem; font-weight: 900; cursor: pointer; }
+.draw-error { margin: 12px 0 0 !important; color: #ffff00 !important; font-size: 1rem !important; }
+.result-card { position: relative; display: grid; place-content: center; margin: 40px; padding: 55px 35px 35px; border-radius: 24px; background: #00ffff; text-align: center; overflow: hidden; }
+.result-card--default { background: #00ffff; }
+.result-card--lucky { background: #7fffd4; }
+.result-card--happy { background: #ffff00; }
+.result-card > strong { font-family: "Cooper Black", Georgia, serif; font-size: clamp(2.5rem, 5vw, 5rem); }
+.result-card--lucky > strong { color: #ff4500; }
+.result-card--happy > strong { color: #00d7c9; }
+.result-card p { margin: 15px 0 0; white-space: pre-line; font-size: clamp(1.15rem, 2vw, 1.8rem); font-weight: 900; line-height: 1.6; }
+.result-card p span { color: #4b0082; font-size: 1.25em; }
+.result-star { position: absolute; z-index: 1; color: #ff4ba1; font-size: 2.8rem; line-height: 1; }
+.result-star--1 { left: 20px; top: 18px; color: #ffff00; font-size: 4.2rem; transform: rotate(-12deg); }
+.result-star--2 { left: 105px; top: 15px; }
+.result-star--3 { left: 165px; top: 40px; font-size: 2rem; }
+.result-star--4 { left: 12px; top: 120px; font-size: 2.2rem; }
+.result-star--5 { right: 18px; top: 115px; font-size: 2.1rem; }
+.result-star--6 { right: 25px; bottom: 15px; color: #ffff00; font-size: 4rem; transform: rotate(14deg); }
+.result-star--7 { right: 105px; bottom: 12px; }
+.result-card--happy .result-star--1, .result-card--happy .result-star--6 { color: #00e7ed; }
+@media (max-width: 1000px) { .photo-row { grid-template-columns: repeat(3, 1fr); } .favorite-star { display: none; } .polaroid--mint, .polaroid--purple { width: 100%; transform: rotate(var(--rotate)); } .lucky-box { grid-template-columns: 1fr; } .lucky-box__form { border-right: 0; border-bottom: 4px dotted #4b0082; } }
+@media (max-width: 700px) { .to-everyone-page { padding: 35px 15px 90px; } .questions-grid { grid-template-columns: 1fr; } .question-card { grid-template-columns: 105px 1fr; padding-left: 102px; } .question-card__number { left: 16px; } .photo-row { grid-template-columns: repeat(2, 1fr); gap: 26px; } .lucky-box__form { padding: 30px 22px; } .draw-controls { gap: 15px; } .draw-controls input, .draw-controls button { width: 50%; height: 68px; font-size: 1.35rem; } .result-card { min-height: 280px; margin: 24px; padding: 25px 15px; } }

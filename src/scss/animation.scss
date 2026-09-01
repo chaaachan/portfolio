@@ -1,0 +1,44 @@
+@keyframes strong-bounce {
+  0% {
+    opacity: 0;
+    transform: translateY(-120px) scale(0.92);
+  }
+
+  42% {
+    opacity: 1;
+    transform: translateY(32px) scale(1.035);
+  }
+
+  58% {
+    transform: translateY(-22px) scale(0.985);
+  }
+
+  72% {
+    transform: translateY(13px) scale(1.015);
+  }
+
+  84% {
+    transform: translateY(-7px) scale(0.995);
+  }
+
+  92% {
+    transform: translateY(3px) scale(1.003);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes fade-in-left {
+  0% {
+    opacity: 0;
+    transform: translateX(-80px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

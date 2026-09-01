@@ -1,0 +1,45 @@
+@use "variables" as v;
+@use "animation";
+@use "header";
+@use "fv";
+@use "top";
+@use "to-everyone";
+@use "footer";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  color: #222;
+  background: v.$background-color;
+  font-family: "Arial Rounded MT Bold", "Helvetica Neue", Arial, sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

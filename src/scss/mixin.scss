@@ -1,0 +1,8 @@
+@use "variables" as v;
+
+@mixin tablet {
+  @media (max-width: v.$breakpoint-tablet) {
+    @content;
+  }
+}
+
