@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import RevealHeading from "@/components/RevealHeading";
+import Footer from "@/components/Footer";
 
 const skills = [
   { name: "HTML", text: "Semantic HTMLや適切な見出し構造を意識したマークアップができます。", color: "pink" },
@@ -51,6 +52,7 @@ export default function TopPage() {
           <Link className="next-page-link" href="/to-everyone">GO NEXT PAGE！！</Link>
         </section>
       </section>
+      <Footer topPageOnly />
     </main>
   );
 }

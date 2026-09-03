@@ -55,6 +55,4 @@
 .skill-card--pink { --accent: #ff1493; } .skill-card--purple { --accent: #9b5de5; } .skill-card--yellow { --accent: #ffd500; } .skill-card--mint { --accent: #32d6c5; } .skill-card--peach { --accent: #ffb6c1; } .skill-card--lavender { --accent: #d9a6ef; } .skill-card--orange { --accent: #ff8c00; }
 .next-page-link { display: block; width: max-content; margin: 60px 0 0 auto; color: #ffff00; font-family: "Cooper Black", Georgia, serif; font-size: clamp(2rem, 4vw, 3.5rem); font-weight: 900; text-decoration: none; transition: transform .25s; }
 .next-page-link:hover { transform: scale(1.08); }
-@media (max-width: 900px) { .about { grid-template-columns: 1fr; } .about__collage { min-height: 480px; border-right: 0; } .skills-grid { gap: 45px 8%; } }
-@media (max-width: 600px) { .top-page { padding: 35px 16px 60px; } .welcome-card { padding: 24px 20px 130px; } .smileys { right: 10%; top: auto; bottom: 20px; } .about__collage { min-height: 340px; } .about-photo { height: 58%; } .skill-tags { grid-template-columns: repeat(2, 1fr); } .skills-grid { grid-template-columns: 1fr; gap: 38px; } .skill-card { min-height: 0; } }
 @media (prefers-reduced-motion: reduce) { .reveal-heading.is-visible { animation: none; } }

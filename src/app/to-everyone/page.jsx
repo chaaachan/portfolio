@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import LuckyOrHappy from "@/components/LuckyOrHappy";
 import BackToTop from "@/components/BackToTop";
 import RevealHeading from "@/components/RevealHeading";
+import ToEveryoneMenu from "@/components/ToEveryoneMenu";
 
 export const metadata = {
   title: "To everyone",
@@ -30,6 +31,7 @@ const photos = [
 export default function ToEveryonePage() {
   return (
     <main>
+      <ToEveryoneMenu />
       <section className="first-view" aria-label="To everyone first view"><Image className="first-view__image" src="/img/to-everyone/to-everyone-fv.png" alt="To everyone" width={1920} height={567} priority /></section>
       <div className="to-everyone-page">
         <section className="questions-section"><RevealHeading as="h1">~~~~~ <span>MORE ABOUT ME</span> ~~~~~</RevealHeading><div className="questions-grid">{questions.map(([q, a], index) => <article className="question-card" key={q}><span className="question-card__number">Q{index + 1}</span><h2>{q}</h2><strong>Answer</strong><p>{a}</p></article>)}</div></section>

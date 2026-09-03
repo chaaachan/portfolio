@@ -55,7 +55,7 @@ export default function Header() {
   }, []);
 
   return (
-    <header className="header">
+    <header className={`header${pathname === "/" ? " header--top-page" : " header--to-everyone"}`}>
       <button
         className={`hamburger${isOpen ? " is-open" : ""}`}
         type="button"

@@ -43,5 +43,3 @@
 .result-star--6 { right: 25px; bottom: 15px; color: #ffff00; font-size: 4rem; transform: rotate(14deg); }
 .result-star--7 { right: 105px; bottom: 12px; }
 .result-card--happy .result-star--1, .result-card--happy .result-star--6 { color: #00e7ed; }
-@media (max-width: 1000px) { .photo-row { grid-template-columns: repeat(3, 1fr); } .favorite-star { display: none; } .polaroid--mint, .polaroid--purple { width: 100%; transform: rotate(var(--rotate)); } .lucky-box { grid-template-columns: 1fr; } .lucky-box__form { border-right: 0; border-bottom: 4px dotted #4b0082; } }
-@media (max-width: 700px) { .to-everyone-page { padding: 35px 15px 90px; } .questions-grid { grid-template-columns: 1fr; } .question-card { grid-template-columns: 105px 1fr; padding-left: 102px; } .question-card__number { left: 16px; } .photo-row { grid-template-columns: repeat(2, 1fr); gap: 26px; } .lucky-box__form { padding: 30px 22px; } .draw-controls { gap: 15px; } .draw-controls input, .draw-controls button { width: 50%; height: 68px; font-size: 1.35rem; } .result-card { min-height: 280px; margin: 24px; padding: 25px 15px; } }

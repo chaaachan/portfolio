@@ -9,7 +9,8 @@ export default function LuckyOrHappy() {
   const draw = () => {
     const value = Number(number);
     if (!Number.isInteger(value) || value < 1 || value > 100) { setError("1〜100の整数を入力してね！"); setResult(null); return; }
-    setError(""); setResult(value % 2 === 0 ? "LUCKY!!" : "HAPPY!!");
+    const randomValue = window.crypto.getRandomValues(new Uint32Array(1))[0];
+    setError(""); setResult(randomValue < 2 ** 31 ? "LUCKY!!" : "HAPPY!!");
   };
   const resultClass = result === "LUCKY!!" ? "lucky" : result === "HAPPY!!" ? "happy" : "default";
 

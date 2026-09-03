@@ -24,6 +24,85 @@ body {
   font-family: "Arial Rounded MT Bold", "Helvetica Neue", Arial, sans-serif;
 }
 
+.responsive-shell,
+.responsive-canvas {
+  width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+  .responsive-shell {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .responsive-canvas {
+    width: 1920px;
+    margin-bottom: 0 !important;
+  }
+
+  // PC版（1920px）の値を保ったまま、キャンバス全体を縮小する。
+  .responsive-canvas .top-page {
+    padding: 52px 72px 80px;
+  }
+
+  .responsive-canvas .to-everyone-page {
+    padding: 52px 85px 130px;
+  }
+
+  .responsive-canvas .section-heading,
+  .responsive-canvas .about__content h2 {
+    font-size: 3rem;
+  }
+
+  .responsive-canvas .welcome-card h2 {
+    font-size: 2.8rem;
+  }
+
+  .responsive-canvas .welcome-card p {
+    font-size: 1.35rem;
+  }
+
+  .responsive-canvas .smileys {
+    font-size: 5.5rem;
+  }
+
+  .responsive-canvas .about__content li {
+    font-size: 1.3rem;
+  }
+
+  .responsive-canvas .footer p {
+    font-size: 1.25rem;
+  }
+
+  .responsive-canvas .next-page-link {
+    font-size: 3.5rem;
+  }
+
+  .responsive-canvas .question-card h2 {
+    font-size: 1.7rem;
+  }
+
+  .responsive-canvas .question-card p {
+    font-size: 1.15rem;
+  }
+
+  .responsive-canvas .lucky-box__form h3 {
+    font-size: 2.2rem;
+  }
+
+  .responsive-canvas .lucky-box__form > p {
+    font-size: 1.5rem;
+  }
+
+  .responsive-canvas .result-card > strong {
+    font-size: 5rem;
+  }
+
+  .responsive-canvas .result-card p {
+    font-size: 1.8rem;
+  }
+}
+
 img {
   max-width: 100%;
 }

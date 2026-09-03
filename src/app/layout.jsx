@@ -1,5 +1,6 @@
 import "@/scss/style.scss";
 import Header from "@/components/Header";
+import ResponsiveContent from "@/components/ResponsiveContent";
 
 export const metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"),
@@ -50,7 +51,7 @@ export default function RootLayout({ children }) {
     <html lang="ja">
       <body>
         <Header />
-        {children}
+        <ResponsiveContent>{children}</ResponsiveContent>
       </body>
     </html>
   );
